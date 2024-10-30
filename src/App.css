@@ -112,6 +112,10 @@ input:focus, textarea:focus, select:focus {
 		max-width: 100%;
 		padding: 0 150px;
 	}
+	.navbar-nav {
+    		flex-direction: row;
+    		gap: 10px; /* Adjust the gap between links */
+  	}
 }
 
 p.success {
