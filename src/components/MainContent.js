@@ -14,7 +14,6 @@ export const MainContent = () => {
         <Skills />
         <Projects/>
         <Contact />
-        <Footer />
         </div>
     )
 }
