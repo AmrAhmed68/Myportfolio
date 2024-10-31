@@ -21,8 +21,11 @@
 }
 
 .ggggg img{
-  width: 10%;
   height: 2%;
+}
+
+.Ahmed {
+  display: flex;
 }
 
 * {
@@ -631,7 +634,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 0 200px 0;
 }
 .contact img {
-  width: 92%;
+    width: 71%;
+    margin-right: 10px;
 }
 .contact h2 {
 	font-size: 45px;
