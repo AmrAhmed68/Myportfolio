@@ -60,10 +60,16 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <div className="ggggg">
-                    <img src = {Whatsapp} alt="Whatsapp" /> 
-                    <img src = {Whatsapp} alt="Whatsapp" />
-                    <img src = {Whatsapp} alt="Whatsapp" />
+                   <div className="ggggg">
+                      <div className="Ahmed">
+                        <img src = {Whatsapp} alt="Whatsapp" /> <h1> 01018324127 </h1> 
+                      </div>
+                      <div className="Ahmed">
+                        <img src = {Whatsapp} alt="Whatsapp" /> <h1> 01018324127 </h1> 
+                      </div>
+                      <div className="Ahmed">
+                        <img src = {Whatsapp} alt="Whatsapp" /> <h1> 01018324127 </h1> 
+                      </div>
                     </div>
               </div>}
             </TrackVisibility>
