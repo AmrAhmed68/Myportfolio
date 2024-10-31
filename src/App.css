@@ -16,6 +16,15 @@
 }
 
 /************ Default Css ************/
+.ggggg {
+  max-width: 10%;
+}
+
+.ggggg img{
+  width: 10%;
+  height: 2%;
+}
+
 * {
   margin: 0;
   padding: 0;
