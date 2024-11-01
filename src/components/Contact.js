@@ -4,6 +4,7 @@ import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import  Whatsapp  from '../assets/img/whatsapp-svgrepo-com.svg'
+import  gmail  from '../assets/img/gmail-svgrepo-com.svg'
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -65,7 +66,7 @@ export const Contact = () => {
                         <img src = {Whatsapp} alt="Whatsapp" /> <h1> 01018324127 </h1> 
                       </div>
                       <div className="Ahmed">
-                        <img src = {Whatsapp} alt="Whatsapp" /> <h1> 01018324127 </h1> 
+                        <img src = {gmail} alt="gmail" /> <h1> amrahmed682003@gmail.com </h1> 
                       </div>
                       <div className="Ahmed">
                         <img src = {Whatsapp} alt="Whatsapp" /> <h1> 01018324127 </h1> 
