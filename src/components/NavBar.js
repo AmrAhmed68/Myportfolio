@@ -40,7 +40,7 @@ export const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar className="edit-nav" id="basic-navbar-nav">
             <Nav className="mobile-menu">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
@@ -51,7 +51,7 @@ export const NavBar = () => {
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
             </span>
-          </Navbar.Collapse>
+          </Navbar>
         </Container>
       </Navbar>
   )
