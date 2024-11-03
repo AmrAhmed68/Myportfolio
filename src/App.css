@@ -335,11 +335,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .horizontal-slider {
-  display: flex;
-  overflow-x: scroll; /* Enable horizontal scrolling */
-  gap: 1px; /* Space between images */
-  padding: 10px 0;
-  scroll-snap-type: x mandatory; /* Snap scrolling to items */
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    gap: 1px;
+    overflow-x: scroll;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    flex-wrap: wrap;
 }
 
 .horizontal-slider::-webkit-scrollbar {
@@ -347,9 +350,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .slider-item {
-  /* flex: 0 0 auto;  */
-  /* width: 300px; */
-    scroll-snap-align: start; 
+    width: calc(95% / 4);
+    scroll-snap-align: start;
     text-align: center;
 }
 
