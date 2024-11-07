@@ -13,7 +13,6 @@ import photo11  from './ReactNative/Screenshot_20241021_001122.jpg'
 import photo12  from './ReactNative/Screenshot_20241021_000725.jpg'
 import photo13  from './ReactNative/Screenshot_20241022_191757_com.amr357.TecStore.jpg'
 import photo14  from './ReactNative/Screenshot_20241022_191801_com.amr357.TecStore.jpg'
-import photo15  from './ReactNative/Screenshot_20241022_191812_com.amr357.TecStore.jpg'
 import photo16  from './ReactNative/Screenshot_20241022_191828_com.amr357.TecStore.jpg'
 import photo17  from './ReactNative/Screenshot_20241022_191841_com.amr357.TecStore.jpg'
 
@@ -33,7 +32,6 @@ const images = [
   { src: photo12, alt: 'Photo 3' },
   { src: photo13, alt: 'Photo 3' },
   { src: photo14, alt: 'Photo 3' },
-  { src: photo15, alt: 'Photo 3' },
   { src: photo16, alt: 'Photo 3' },
   { src: photo17, alt: 'Photo 3' },
 ];
