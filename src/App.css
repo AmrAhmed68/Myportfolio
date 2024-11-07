@@ -161,7 +161,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
       text-align : center;
-	  text-decoration-line: line-through;
+	  text-decoration-line: underline;
+;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
