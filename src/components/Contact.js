@@ -1,49 +1,15 @@
+import './Contact.css'
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
+import contactImg from "../../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import  Whatsapp  from '../assets/img/WhatsAppButtonGreenLarge.svg'
-import  gmail  from '../assets/img/gmail-svgrepo-com.svg'
+import  Whatsapp  from '../../assets/img/whatsapp-svgrepo-com.svg'
+import Linkedin from '../../assets/img/linkedin-1-svgrepo-com (1).svg'
+import Github from '../../assets/img/github-icon-1.svg'
+import FaceBook from '../../assets/img/facebook-svgrepo-com.svg'
 
 export const Contact = () => {
-  const formInitialDetails = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: ''
-  }
-  const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState('Send');
-  const [status, setStatus] = useState({});
-
-  const onFormUpdate = (category, value) => {
-      setFormDetails({
-        ...formDetails,
-        [category]: value
-      })
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
-    } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-    }
-  };
 
   return (
     <section className="contact" id="connect">
@@ -52,26 +18,31 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+                <img id="connect" className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
               }
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <div>
                 <h2>Get In Touch</h2>
-                   <div className="ggggg">
+                    <div className="contact22">
                       <div className="Ahmed">
-                        <a aria-label="Chat on WhatsApp" href="https://wa.me/01018324127"> 
-                          <img alt="Chat on WhatsApp" src={Whatsapp} />
-                        </a>
+                        <img src = {Whatsapp} alt="Whatsapp" />
+                      <a className="Chat" href="https://wa.me/01018324127">Chat my on WhatsApp</a>
                       </div>
                       <div className="Ahmed">
-                        <img src = {gmail} alt="gmail" /> <h1> amrahmed682003@gmail.com </h1> 
+                        <img src = {Github} alt="Whatsapp" />
+                      <a className="Chat" href="https://github.com/AmrAhmed68">Discover my github</a>                      
                       </div>
                       <div className="Ahmed">
-                        <img src = {Whatsapp} alt="Whatsapp" /> <h1> 01018324127 </h1> 
+                        <img src = {Linkedin} alt="Whatsapp" />
+                      <a className="Chat" href="https://www.linkedin.com/in/amr-ahmed682003/">Discover my Linkedin</a>                      
+                      </div>
+                      <div className="Ahmed">
+                        <img src = {FaceBook} alt="FaceBook" />
+                      <a className="Chat" href="https://www.facebook.com/profile.php?id=100009582705852&mibextid=JRoKGi">Discover my Facebook</a>                      
                       </div>
                     </div>
               </div>}
