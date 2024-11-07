@@ -1,13 +1,13 @@
 import './Contact.css'
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../../assets/img/contact-img.svg";
+import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import  Whatsapp  from '../../assets/img/whatsapp-svgrepo-com.svg'
-import Linkedin from '../../assets/img/linkedin-1-svgrepo-com (1).svg'
-import Github from '../../assets/img/github-icon-1.svg'
-import FaceBook from '../../assets/img/facebook-svgrepo-com.svg'
+import  Whatsapp  from '../assets/img/whatsapp-svgrepo-com.svg'
+import Linkedin from '../assets/img/linkedin-1-svgrepo-com (1).svg'
+import Github from '../assets/img/github-icon-1.svg'
+import FaceBook from '../assets/img/facebook-svgrepo-com.svg'
 
 export const Contact = () => {
 
