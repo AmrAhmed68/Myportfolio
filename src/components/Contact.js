@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import  Whatsapp  from '../assets/img/whatsapp-svgrepo-com.svg'
+import  Whatsapp  from '../assets/img/WhatsAppButtonGreenLarge.svg'
 import  gmail  from '../assets/img/gmail-svgrepo-com.svg'
 
 export const Contact = () => {
@@ -63,7 +63,8 @@ export const Contact = () => {
                 <h2>Get In Touch</h2>
                    <div className="ggggg">
                       <div className="Ahmed">
-                        <img src = {Whatsapp} alt="Whatsapp" /> <h1> 01018324127 </h1> 
+                        <a aria-label="Chat on WhatsApp" href="https://wa.me/01018324127"> <img alt="Chat on WhatsApp" src={Whatsapp} />
+                        <a />
                       </div>
                       <div className="Ahmed">
                         <img src = {gmail} alt="gmail" /> <h1> amrahmed682003@gmail.com </h1> 
