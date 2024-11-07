@@ -64,7 +64,6 @@ export const Contact = () => {
                    <div className="ggggg">
                       <div className="Ahmed">
                         <a aria-label="Chat on WhatsApp" href="https://wa.me/01018324127"> <img alt="Chat on WhatsApp" src={Whatsapp} />
-                        <a />
                       </div>
                       <div className="Ahmed">
                         <img src = {gmail} alt="gmail" /> <h1> amrahmed682003@gmail.com </h1> 
