@@ -89,10 +89,6 @@ p, li, button, ul {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 img {
   width: 90%;
   height: auto;
