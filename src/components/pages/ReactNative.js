@@ -70,9 +70,9 @@ export const ReactNative = () => {
       <p>This is the detailed view of the React Native E-Commerce project.</p>
       <div className="horizontal-slider">
         {images.map((image, index) => (
-          <div className="slider-item" key={index}>
+          <div className="slider-item1" key={index}>
             <img 
-            className="slider-image" 
+            className="slider-image1" 
             src={image.src} 
             onClick={() => openZoom(image)}
             />
